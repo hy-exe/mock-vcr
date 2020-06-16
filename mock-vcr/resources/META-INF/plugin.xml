@@ -1,0 +1,26 @@
+<idea-plugin>
+  <id>mock-vcr</id>
+  <name>mock-vcr</name>
+  <version>1.0</version>
+  <vendor email="huangyin@company.com" url="http://www.hycompany.com">HyCompany</vendor>
+
+  <description><![CDATA[
+      选中类-右键-ToJson  就可以将简单Java类型转成JSON<br>
+      <em>mock-vcr</em>
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="MockVcr.ToJsonAction" class="com.hy.company.ToJsonAction" text="MockVcr" description="pojo to json">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
